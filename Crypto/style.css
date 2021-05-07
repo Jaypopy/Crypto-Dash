@@ -41,7 +41,7 @@ body {
 
 .navbar {
   width: 85vw;
-  height: 10vh;
+  height: 7vh;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -70,7 +70,7 @@ body {
 
 .dashboard {
   margin-top: 10px;
-  height: 78.5vh;
+  height: 82vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -125,4 +125,12 @@ body {
 
 .sidebar-text {
   font-size: 1rem;
+}
+
+.crypto-price{
+color:#756294;
+}
+
+.crypto-name{
+font-size: 2rem;
 }

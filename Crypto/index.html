@@ -18,7 +18,7 @@
             <nav class="navbar" id="grad2">
                 <div class="crypto">
                     <img class="logo" src="pictures/bitcoin-image.png" alt="Bitcoin-logo">
-                    <h1 class="sidebar-text">Bitcoin</h1>
+                    <h1 class="sidebar-text" onclick="getCrypto();">Bitcoin</h1>
                 </div>
                 <div class="crypto">
                     <img class="logo" src="pictures/eth-image.png" alt="Etherium-logo">
@@ -33,8 +33,8 @@
                     <h1 class="sidebar-text">Litecoin</h1>
                 </div>
                 <div class="crypto">
-                    <img class="logo2" src="pictures/z-image.png" alt="ZCoin-logo">
-                    <h1 class="sidebar-text">ZCoin</h1>
+                    <img class="logo" src="pictures/z-image.png" alt="ZCoin-logo">
+                    <h1 class="sidebar-text">ZCash</h1>
                 </div>
                 <div class="search-bar">
 <img class="logo3" src="pictures/magnifying-glass.png" alt="magnifying-glass">    
@@ -44,10 +44,12 @@
             <div class="dashboard" id="grad3">
                 Dashboard
                 <div class="dashboard-top">
-                    <button onclick="getCrypto();">Click me</button>
+                    <button>Click me</button>
                     <div class="crypo-information">
 <h1 class="cryptoInfo">Here</h1>
                     </div>
+                </div>
+                <div class="dashboard-content" > <!--Populated by Javascript-->
                 </div>
                 <div class="dashboard-bottom">
                     Bottom dashboard
