@@ -73,16 +73,17 @@ body {
   height: 82vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  justify-content: space-between;}
 
 .dashboard-top {
   display: flex;
+  justify-content: center;
 }
 
 .dashboard-bottom {
   display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
 }
 
 .sidebar {
@@ -93,6 +94,11 @@ body {
   align-items: center;
   height: 90vh;
   margin-right: 10px;
+}
+
+.crypto-graph{
+  height: 40vh;
+  width: 20vw;
 }
 
 .crypto {
@@ -133,4 +139,9 @@ color:#756294;
 
 .crypto-name{
 font-size: 2rem;
+}
+
+.crypto-information{
+  display: flex;
+  flex-direction: column;
 }

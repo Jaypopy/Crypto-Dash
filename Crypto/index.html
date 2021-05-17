@@ -18,41 +18,155 @@
             <nav class="navbar" id="grad2">
                 <div class="crypto">
                     <img class="logo" src="pictures/bitcoin-image.png" alt="Bitcoin-logo">
-                    <h1 class="sidebar-text" onclick="getCrypto();">Bitcoin</h1>
+                    <h1 class="sidebar-text" id="BTC" value="BTC" onclick="changeTheVariable('BTC'); ">Bitcoin</h1>
                 </div>
                 <div class="crypto">
                     <img class="logo" src="pictures/eth-image.png" alt="Etherium-logo">
-                    <h1 class="sidebar-text">Etherium</h1>
+                    <h1 class="sidebar-text" id="ETH" value="ETH" onclick="changeTheVariable('ETH'); ">Etherium</h1>
                 </div>
                 <div class="crypto">
                     <img class="logo" src="pictures/doge-image.png" alt="Dogecoin-logo">
-                    <h1 class="sidebar-text">Dogecoin</h1>
+                    <h1 class="sidebar-text" id="DOGE" value="DOGE" onclick="changeTheVariable('DOGE'); ">Dogecoin</h1>
                 </div>
                 <div class="crypto">
                     <img class="logo2" src="pictures/lite-image.png" alt="Litecoin-logo">
-                    <h1 class="sidebar-text">Litecoin</h1>
+                    <h1 class="sidebar-text" id="LTC" value="LTC" onclick="changeTheVariable('LTC'); ">Litecoin</h1>
                 </div>
                 <div class="crypto">
                     <img class="logo" src="pictures/z-image.png" alt="ZCoin-logo">
-                    <h1 class="sidebar-text">ZCash</h1>
+                    <h1 class="sidebar-text" id="ZEC" value="ZEC" onclick="changeTheVariable('ZEC'); ">ZCash</h1>
                 </div>
                 <div class="search-bar">
 <img class="logo3" src="pictures/magnifying-glass.png" alt="magnifying-glass">    
-<input type="text" class="search-text" placeholder="Search..."> 
+<input type="text" id="inputField" clientidmode="static" class="search-text" onchange="changeTheVariable(); return false;" placeholder="Search..."> 
 </div>
             </nav>
             <div class="dashboard" id="grad3">
-                Dashboard
                 <div class="dashboard-top">
-                    <button>Click me</button>
                     <div class="crypo-information">
-<h1 class="cryptoInfo">Here</h1>
+                        <div class="crypto-graph">
+                        <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div id="tradingview_8e2e4"></div>
+                            <div class="tradingview-widget-copyright"></div>
+                            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                            <script type="text/javascript">
+                            var a = "BTC";
+                                function changeTheVariable(num) {
+                                    a = document.getElementById('inputField').value;
+                                    if (!num == "")
+                                    {
+                                        a = num;
+                                    }
+                                    new TradingView.widget(
+                                        {
+                                            "width": 800,
+                                            "height": 400,
+                                            "symbol": "BINANCE:" + a + "USD",
+                                            "interval": "D",
+                                            "timezone": "Etc/UTC",
+                                            "theme": "dark",
+                                            "style": "1",
+                                            "locale": "sv_SE",
+                                            "toolbar_bg": "#f1f3f6",
+                                            "enable_publishing": false,
+                                            "allow_symbol_change": true,
+                                            "container_id": "tradingview_8e2e4"
+                                        });
+                                }
+                                
+                                
+                            </script>
+                        </div>
+                    </div>
+                        
+
+
+                
+                        <!-- TradingView Widget END -->
                     </div>
                 </div>
                 <div class="dashboard-content" > <!--Populated by Javascript-->
                 </div>
                 <div class="dashboard-bottom">
-                    Bottom dashboard
+                    <div class="crypo-2">
+                        <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+<div id="tradingview_2556c"></div>
+<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+<script type="text/javascript">
+new TradingView.widget(
+{
+"autosize": true,
+"symbol": "NASDAQ:AAPL",
+"interval": "D",
+"timezone": "Etc/UTC",
+"theme": "dark",
+"style": "1",
+"locale": "sv_SE",
+"toolbar_bg": "#f1f3f6",
+"enable_publishing": false,
+"hide_top_toolbar": true,
+"save_image": false,
+"container_id": "tradingview_2556c"
+}
+);
+</script>
+</div>
+<!-- TradingView Widget END -->
+                    </div>
+                    <div class="crypo-3">
+                        <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+<div id="tradingview_846e8"></div>
+<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+<script type="text/javascript">
+new TradingView.widget(
+{
+"autosize": true,
+"symbol": "NASDAQ:TSLA",
+"interval": "D",
+"timezone": "Etc/UTC",
+"theme": "dark",
+"style": "1",
+"locale": "sv_SE",
+"toolbar_bg": "#f1f3f6",
+"enable_publishing": false,
+"hide_top_toolbar": true,
+"save_image": false,
+"container_id": "tradingview_846e8"
+}
+);
+</script>
+</div>
+<!-- TradingView Widget END -->
+                    </div>
+                    <div class="crypo-4">
+                        <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+<div id="tradingview_8411b"></div>
+<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+<script type="text/javascript">
+new TradingView.widget(
+{
+"autosize": true,
+"symbol": "NASDAQ:AMZN",
+"interval": "D",
+"timezone": "Etc/UTC",
+"theme": "dark",
+"style": "1",
+"locale": "sv_SE",
+"toolbar_bg": "#f1f3f6",
+"enable_publishing": false,
+"hide_top_toolbar": true,
+"save_image": false,
+"container_id": "tradingview_8411b"
+}
+);
+</script>
+</div>
+<!-- TradingView Widget END -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -60,4 +174,6 @@
     </div>
     <script src="main.js"></script>        
 </body>
+
+<!--Test Commit-->
 </html>

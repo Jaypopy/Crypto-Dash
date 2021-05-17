@@ -1,5 +1,9 @@
 let dashboardContent = document.querySelector(".dashboard-content");
 
+
+
+
+/*
 async function getCrypto()
     {
         
@@ -83,4 +87,6 @@ async function getCrypto()
         dashboardContent.append(cryptoPrice);
 
     }
+    
 }
+*/
