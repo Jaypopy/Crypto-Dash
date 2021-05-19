@@ -169,15 +169,20 @@ margin-right: 1vw;
 .sidebar-top
 {
 margin-top: 10vh;
+width: 10vw;
+
 }
 
 .sidebar-middle
 {
 margin-top: 5vh;
+width: 10vw;
 }
 
 .sidebar-bottom{
 margin-top: 5vh;
+width: 10vw;
+
 }
 
 .sidebar-logo{
@@ -199,52 +204,70 @@ h4{
 
 .dashboard-panel :hover{
 cursor: pointer;
+margin-left: 10px;
 }
 
 .layout-panel :hover{
   cursor: pointer;
+  margin-left: 10px;
 
 }
 
 .inbox-panel :hover{
   cursor: pointer;
+  margin-left: 10px;
 
 }
 
 .economics-panel :hover{
   cursor: pointer;
+  margin-left: 10px;
 
 }
 
 .invoice-panel :hover{
   cursor: pointer;
+  margin-left: 10px;
 
 }
 
 .event-panel :hover{
   cursor: pointer;
+  margin-left: 10px;
 
 }
 .project-panel :hover{
   cursor: pointer;
+  margin-left: 10px;
 
 }
 
 .profile-panel :hover{
   cursor: pointer;
+  margin-left: 10px;
 
 }
 
 .table-panel :hover{
   cursor: pointer;
+  margin-left: 10px;
 
 }
 
 .calculator-panel :hover{
   cursor: pointer;
+  margin-left: 10px;
 
 }
 
 .log :hover{
   cursor: pointer;
+  margin-left: 10px;
+
+}
+
+.copyright{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
 }
