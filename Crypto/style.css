@@ -16,6 +16,11 @@
   background-image: linear-gradient(to top, #272953, #272953);
 }
 
+h3{
+  color:rgb(180, 180, 180);
+  font-size: 1rem;
+}
+
 html,
 body {
   color: white;
@@ -73,7 +78,8 @@ body {
   height: 82vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;}
+  justify-content: space-between;
+}
 
 .dashboard-top {
   display: flex;
@@ -84,21 +90,19 @@ body {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
+  border-radius: 0.5rem;
+  background-color: #181C27;
+  border-color: #181C27;
+  border-style: outset;
 }
 
 .sidebar {
   width: 15vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
   height: 90vh;
   margin-right: 10px;
-}
-
-.crypto-graph{
-  height: 40vh;
-  width: 20vw;
 }
 
 .crypto {
@@ -139,9 +143,108 @@ color:#756294;
 
 .crypto-name{
 font-size: 2rem;
+margin-left: 1vw;
+margin-right: 1vw;
+}
+
+.crypto-graph
+{
+  display: flex;
+  width: auto;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #181C27;
+  border-color: #181C27;
+  border-style: outset;
+  border-radius: 0.2rem;
+  border-width: 0.4rem;
 }
 
 .crypto-information{
   display: flex;
   flex-direction: column;
+}
+
+.sidebar-top
+{
+margin-top: 10vh;
+}
+
+.sidebar-middle
+{
+margin-top: 5vh;
+}
+
+.sidebar-bottom{
+margin-top: 5vh;
+}
+
+.sidebar-logo{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.logo-name
+{
+  font-size: 1.5rem;
+  color:rgb(180, 180, 180);
+}
+
+h4{
+  font-size: 0.8rem;
+  color:rgb(121, 121, 121);
+}
+
+.dashboard-panel :hover{
+cursor: pointer;
+}
+
+.layout-panel :hover{
+  cursor: pointer;
+
+}
+
+.inbox-panel :hover{
+  cursor: pointer;
+
+}
+
+.economics-panel :hover{
+  cursor: pointer;
+
+}
+
+.invoice-panel :hover{
+  cursor: pointer;
+
+}
+
+.event-panel :hover{
+  cursor: pointer;
+
+}
+.project-panel :hover{
+  cursor: pointer;
+
+}
+
+.profile-panel :hover{
+  cursor: pointer;
+
+}
+
+.table-panel :hover{
+  cursor: pointer;
+
+}
+
+.calculator-panel :hover{
+  cursor: pointer;
+
+}
+
+.log :hover{
+  cursor: pointer;
 }
